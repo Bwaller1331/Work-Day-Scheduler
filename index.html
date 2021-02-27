@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets\css\style.css" />
     <title>Work Day Scheduler</title>
 
   </head>
@@ -27,90 +27,92 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
+      <!-- Current Date and Time -->
       <p id="currentDay" class="lead"></p>
       <p id="currentTime"></p>
     </header>
     <div class="container">
-      <!-- Timeblocks go here -->
-      <div class="input-group mb-3">
-        <div id="hour1"class="8am day">8 a.m.</div>
-        <input type="text" class="form-control userInput" placeholder="Activity and Time" aria-label="workday Scheduler" aria-describedby="basic-addon2">
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary save-btn" type="button">Save</button>
+      <div id="hour8" class="row time-block">
+        <div class="col-md-1 hour">
+            8 AM
         </div>
-      </div>
-      <div class="input-group mb-3">
-        <div id='hour2' class="9am day">9 a.m.</div>
-        <input type="text" class="form-control userInput" placeholder="Activity and Time" aria-label="workday Scheduler" aria-describedby="basic-addon2">
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary save-btn" type="button">Save</button>
-        </div>
-      </div>
-      <div class="input-group mb-3">
-        <div id ='hour3' class="10am day">10 a.m.</div>
-        <input type="text" class="form-control userInput" placeholder="Activity and Time" aria-label="workday Scheduler" aria-describedby="basic-addon2">
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary save-btn" type="button">Save</button>
-        </div>
-      </div>
-      <div class="input-group mb-3">
-        <div id="hour4" class="11am day">11 a.m.</div>
-        <input type="text" class="form-control userInput" placeholder="Activity and Time" aria-label="workday Scheduler" aria-describedby="basic-addon2">
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary save-btn" type="button">Save</button>
-        </div>
-      </div>
-      <div class="input-group mb-3">
-        <div id='hour5' class="12pm day">12 p.m.</div>
-        <input type="text" class="form-control userInput" placeholder="Activity and Time" aria-label="workday Scheduler" aria-describedby="basic-addon2">
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary save-btn" type="button">Save</button>
-        </div>
-      </div>
-      <div class="input-group mb-3">
-        <div id='hour6' class="1pm day">1 p.m.</div>
-        <input type="text" class="form-control userInput" placeholder="Activity and Time" aria-label="workday Scheduler" aria-describedby="basic-addon2">
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary save-btn" type="button">Save</button>
-        </div>
-      </div>
-      <div class="input-group mb-3">
-        <div id="hour7" class="2pm day">2 p.m.</div>
-        <input type="text" class="form-control userInput" placeholder="Activity and Time" aria-label="workday Scheduler" aria-describedby="basic-addon2">
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary save-btn" type="button">Save</button>
-        </div>
-      </div>
-      <div class="input-group mb-3">
-        <div id ="hour8" class="3pm day">3 p.m.</div>
-        <input type="text" class="form-control userInput" placeholder="Activity and Time" aria-label="workday Scheduler" aria-describedby="basic-addon2">
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary save-btn" type="button">Save</button>
-        </div>
-      </div>
-      <div class="input-group mb-3">
-        <div id="hour9" cclass="4pm day">4 p.m.</div>
-        <input type="text" class="form-control userInput" placeholder="Activity and Time" aria-label="workday Scheduler" aria-describedby="basic-addon2">
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary save-btn" type="button">Save</button>
-        </div>
-      </div>
-      <div class="input-group mb-3">
-        <div id="hour10" class="5pm day">5 p.m.</div>
-        <input type="text" class="form-control userInput" placeholder="Activity and Time" aria-label="workday Scheduler" aria-describedby="basic-addon2">
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary save-btn" type="button">Save</button>
-        </div>
-      </div>
-      <div class="input-group mb-3">
-        <div id="hour11" class="6pm day">6 p.m.</div>
-        <input type="text" class="form-control userInput" placeholder="Activity and Time" aria-label="workday Scheduler" aria-describedby="basic-addon2">
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary save-btn" type="button">Save</button>
-        </div>
-      </div>
+        <textarea class="col-md-10 description">
+        </textarea>
+        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
     </div>
-
+    <div id="hour9" class="row time-block">
+      <div class="col-md-1 hour">
+          9 AM
+      </div>
+      <textarea class="col-md-10 description">
+      </textarea>
+      <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+  </div>
+  <div id="hour10" class="row time-block">
+    <div class="col-md-1 hour">
+        10 AM
+    </div>
+    <textarea class="col-md-10 description">
+    </textarea>
+    <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+</div>
+<div id="hour11" class="row time-block">
+  <div class="col-md-1 hour">
+      11 AM
+  </div>
+  <textarea class="col-md-10 description">
+  </textarea>
+  <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+</div>
+<div id="hour1" class="row time-block">
+  <div class="col-md-1 hour">
+      12 pm
+  </div>
+  <textarea class="col-md-10 description">
+  </textarea>
+  <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+</div>
+<div id="hour13" class="row time-block">
+  <div class="col-md-1 hour">
+      1 PM
+  </div>
+  <textarea class="col-md-10 description">
+  </textarea>
+  <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+</div>
+<div id="hour14" class="row time-block">
+  <div class="col-md-1 hour">
+      2 PM
+  </div>
+  <textarea class="col-md-10 description">
+  </textarea>
+  <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+</div>
+<div id="hour15" class="row time-block">
+  <div class="col-md-1 hour">
+      3 PM
+  </div>
+  <textarea class="col-md-10 description">
+  </textarea>
+  <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+</div>
+<div id="hour16" class="row time-block">
+  <div class="col-md-1 hour">
+      4 PM
+  </div>
+  <textarea class="col-md-10 description">
+  </textarea>
+  <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+</div>
+<div id="hour17" class="row time-block">
+  <div class="col-md-1 hour">
+      5 PM
+  </div>
+  <textarea class="col-md-10 description">
+  </textarea>
+  <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+</div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="assets\js\script.js"></script>
