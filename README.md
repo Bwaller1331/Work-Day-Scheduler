@@ -30,10 +30,16 @@ A calendar application that has dynamically updating html and css.
 
 ## Functionality
 ```
-- Calendat displays the current day, date and time at the top of the page
+- Calendar displays the current day, date and time at the top of the page
 - Each time block is color coded to indicate whether the timeslot is in the past(gray) present(red) or future(green)
 - Each time slot has an input field where users can save their activities
 - Once the save button is clicked the activity will be saved to local storage
 ```
 ## ScreenShot
 ![](assets\imgs\05-third-party-apis-homework-demo.gif)
+
+# Contributors
+***
+
+## Brandon Waller
+***
