@@ -36,7 +36,7 @@ A calendar application that has dynamically updating html and css.
 - Once the save button is clicked the activity will be saved to local storage
 ```
 ## ScreenShot
-![](assets\imgs\05-third-party-apis-homework-demo.gif)
+![](assets/imgs/05-third-party-apis-homework-demo.gif)
 
 # Contributors
 ***
